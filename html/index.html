@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Freelance Available!</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 0.9rem;
+				color: #333;
+				line-height: 1.5;
+				font-weight: 300;
+				text-align: center;
+				text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+				background-color: #f2f2f2;
+				background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+				background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+				background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+				background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+				background-repeat: repeat-x;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#f2f2f2', GradientType=0);
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			.box {
+				width: 300px;
+				height: 300px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0px 0px 10px #000;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				transition: 0.3s;
+				padding: 0.5rem;
+			}
+			.box:hover {
+				box-shadow: 0px 0px 20px #000;
+			}
+			small {
+				display: block;
+				font-size: 0.8rem;
+				color: #999;
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<h3>Freelance Available!</h3>
+				<p>There is nothing we can not break through. :D</p>
+				<a title="Send Email" href="mailto:yangondev@gmail.com"
+					>👉🏻Hire me for your work!👈🏻</a
+				>
+				<small
+					>&copy; 2020 - <span id="year">1997</span> <br />
+					All right reserved.</small
+				>
+			</div>
+		</div>
+		<!-- My logic will goes here! -->
+		<script type="text/javascript">
+			let selectDate = document.querySelector('#year')
+			let currentYear = new Date().getFullYear()
+			selectDate.textContent = currentYear
+		</script>
+	</body>
+</html>

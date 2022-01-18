@@ -1,0 +1,9 @@
+name = "learn-worker"
+type = "webpack"
+
+account_id = "ff4b8a3dcff109842a271df910eeb5ef"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-01-17"
+webpack_config = "webpack.config.js"
